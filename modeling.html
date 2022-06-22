@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modeling</title>
+    <link rel="stylesheet" href="css/modeling.css">
+    <link rel="icon" href="http://ethanothepro.github.io/favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <h1>Ethan Outangoun</h1>
+         <section class="menu">
+            <div class="btn-group">
+                   
+              <input type="button" value="Home " onclick="window.location.href = 'index.html';">
+              <input type="button" value="Coding Projects " onclick="window.location.href = 'projects.html';">
+              <input type="button" value="3D Modeling " onclick="window.location.href = 'modeling.html';">
+              <input type="button" value="Contact" onclick="window.location.href = 'contact.html';">
+
+            </div>
+
+        </section>
+    </div>
+    
+    <section class="title">
+        <h2>My Reel</h2>
+        <h3>Take a look</h3>
+    </section>
+
+    <section class="slideshow">
+        <div class="display-container">
+            <img class="mySlides" src="images/trombone.jpg" style="width:100%">
+            <img class="mySlides" src="images/room.jpg" style="width:100%">
+
+            <div class="buttons">
+              <button class="slide-button-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="slide-button-right" onclick="plusDivs(1)">&#10095;</button>
+             
+
+            </div>
+            
+            
+           
+        </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+    </section>
+
+    <p>shut up</p>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@200;300;400;500&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif ;
+    margin: 0;
+}
+
+.header{
+    background: white;
+    
+}
+
+.menu{
+    background-color: rgb(237, 238, 238);
+    padding: 0.7em;
+    text-align: center;
+}
+
+.menu input[type = button]{
+
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background: transparent;
+    font-size: 80%;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    
+}
+
+input[type = button]:hover{
+
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+
+h1{
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+
+.normal-image {
+    width: 100%;
+    
+
+}
+
+.cropped-image{
+    width: 100%;
+    display: none;
+}
+
+
+
+.featured-container{
+    text-align: center;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h3{
+    font-weight: 300;
+}
+
+.featured-container p{
+    font-weight: 100;
+}
+
+.coding-showcase{
+    display: grid;
+}
+
+.penguin{
+    width: 100%;
+   
+    
+}
+
+.penguin:hover{
+    cursor: pointer;
+  
+}
+
+
+
+@media (min-width:900px) {
+    .normal-image {
+        display: none;
+        
+    
+    }
+    
+    .cropped-image{
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+
